@@ -1,0 +1,87 @@
+[
+    {
+      "recipe_id": 1,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Basil Chicken Stir-Fry",
+      "short_desc": "A flavorful stir-fry featuring chicken, basil, and mushrooms.",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaf",
+        "400 g mushroom"
+      ],
+      "prepare_time": 30 ,
+      "calories": 380
+    },
+    {
+      "recipe_id": 2,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Soy Glazed Chicken",
+      "short_desc": "Tender chicken glazed with a sweet and savory soy sauce.",
+      "ingredients": [
+        "600 g chicken",
+        "100 ml soy sauce",
+        "50 g brown sugar",
+        "2 cloves garlic"
+      ],
+      "prepare_time": 35 ,
+      "calories": 420
+    },
+    {
+      "recipe_id": 3,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Basil Mushroom Pasta",
+      "short_desc": "A delightful pasta dish featuring fresh basil and mushrooms.",
+      "ingredients": [
+        "300 g pasta",
+        "200 g basil leaf",
+        "400 g mushroom",
+        "100 g parmesan cheese"
+      ],
+      "prepare_time": 25 ,
+      "calories": 320
+    },
+    {
+      "recipe_id": 4,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Soy Mushroom Stir-Fry",
+      "short_desc": "A vegetarian-friendly stir-fry with mushrooms and a soy-based sauce.",
+      "ingredients": [
+        "500 g mushroom",
+        "150 ml soy sauce",
+        "50 ml sesame oil",
+        "3 cloves garlic"
+      ],
+      "prepare_time": 20,
+      "calories": 280
+    },
+    {
+      "recipe_id": 5,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Chicken Basil Salad",
+      "short_desc": "A refreshing salad with tender chicken and fragrant basil leaves.",
+      "ingredients": [
+        "400 g chicken",
+        "150 g basil leaf",
+        "100 g cherry tomatoes",
+        "1 avocado"
+      ],
+      "prepare_time": 15,
+      "calories": 250
+    },
+    {
+      "recipe_id": 6,
+      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "recipe_name": "Mushroom Soy Soup",
+      "short_desc": "A comforting soup featuring mushrooms in a soy-infused broth.",
+      "ingredients": [
+        "500 g mushroom",
+        "200 ml soy sauce",
+        "1 onion",
+        "2 carrots"
+      ],
+      "prepare_time": 40 ,
+      "calories": 180
+    }
+  ]
+  
