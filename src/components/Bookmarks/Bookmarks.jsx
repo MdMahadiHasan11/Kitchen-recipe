@@ -1,7 +1,6 @@
 
-// import Bookmark from '../../components/Bookmark/Bookmark'
-// import Bookmark from '../../components/Bookmark/Bookmark'
-// import Bookmark from '../../components/Bookmark/Bookmark'handlePrepare
+import Bookmark from '../../components/Bookmark/Bookmark'
+// handlePrepare
 import PropTypes from 'prop-types'
 
 
@@ -29,12 +28,12 @@ const Bookmarks = ({ bookmarks,  }) => {
             </div>
 
             {/* table   */}
+            {/* handlePrepare={handlePrepare} */}
 
+            {
+                bookmarks.map((bookmark, i) => <Bookmark key={bookmark.recipe_id} bookmark={bookmark} index={i + 1}> </Bookmark>)
 
-            {/* {
-                bookmarks.map((bookmark, i) => <Bookmark key={bookmark.recipe_id} bookmark={bookmark} index={i + 1}> handlePrepare={handlePrepare}</Bookmark>)
-
-            } */}
+            }
 
             
 
