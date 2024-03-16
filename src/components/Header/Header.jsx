@@ -6,15 +6,15 @@ const Header = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex">
                         <div>
-                            <a className="text-4xl font-extrabold">Kitchen Recipe</a>
+                            <a href="" className="text-4xl font-extrabold">Kitchen Recipe</a>
                         </div>
                     </div>
                     <div className=" hidden lg:flex">
                         <ul className="px-1 text-lg flex">
-                            <li><a className="text-btn-color ">Home</a></li>
-                            <li className="mx-8"><a className="text-text-gray">Recipes</a></li>
-                            <li><a className="text-text-gray">About</a></li>
-                            <li className="mx-8"><a className="text-text-gray">Search</a></li>
+                            <li><a href="" className="text-btn-color ">Home</a></li>
+                            <li className="mx-8"><a  href="" className="text-text-gray">Recipes</a></li>
+                            <li><a href=""  className="text-text-gray">About</a></li>
+                            <li className="mx-8"><a href=""  className="text-text-gray">Search</a></li>
                         </ul>
                     </div>
                     <div className="flex justify-between items-center">

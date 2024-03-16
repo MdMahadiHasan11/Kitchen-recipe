@@ -5,7 +5,7 @@ import time from '../../assets/images/time.png'
 import PropTypes from 'prop-types';
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart , handleAddBookmark }) => {
     const { recipe_id, img, recipe_name, short_desc, ingredients, prepare_time, calories } = cart;
     return (
         <div>
@@ -65,7 +65,7 @@ const Cart = ({ cart }) => {
                     </div>
 
                     <div className="card-actions items-center text-center py-4">
-                        <button className="py-2 px-4 mx-auto bg-[#0BE58A] rounded-full">Want to Cook</button>
+                        <button onClick={()=> handleAddBookmark(cart)} className="py-2 px-4 mx-auto bg-[#0BE58A] rounded-full">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,8 @@ const Cart = ({ cart }) => {
     );
 };
 Cart.propTypes = {
-    cart: PropTypes.object.isRequired
+    cart: PropTypes.object.isRequired,
+    handleAddBookmark:PropTypes.func
 }
 
 export default Cart;
