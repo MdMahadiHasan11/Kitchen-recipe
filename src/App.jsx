@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
-import Bookmarks from './components/Bookmarks/Bookmarks'
+import Bookmarks from '../../components/Bookmarks/Bookmarks'
 import Carts from './components/Carts/Carts'
 import Header from './components/Header/Header'
 
@@ -29,8 +29,8 @@ function App() {
 
   }
 
-  const handlePrepare = () =>{
-    console.log('hasan');
+  const handlePrepare = cartid =>{
+    console.log(cartid);
   }
 
 
@@ -44,9 +44,7 @@ function App() {
       <div className='md:flex'>
         <Carts handleAddBookmark={handleAddBookmark}></Carts>
 
-        <Bookmarks bookmarks={bookmarks } handlePrepare={handlePrepare}>
-
-        </Bookmarks>
+        <Bookmarks bookmarks={bookmarks } handlePrepare={handlePrepare}></Bookmarks>
       </div>
 
     </>

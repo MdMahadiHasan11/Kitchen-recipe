@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types'
-import Bookmark from '../../components/Bookmark/Bookmark'
-// import Comment from '../../components/Comment/Comment'  
 
-const Bookmarks = ({ bookmarks , handlePrepare }) => {
+// import Bookmark from '../../components/Bookmark/Bookmark'
+// import Bookmark from '../../components/Bookmark/Bookmark'
+// import Bookmark from '../../components/Bookmark/Bookmark'handlePrepare
+import PropTypes from 'prop-types'
+
+
+const Bookmarks = ({ bookmarks,  }) => {
     return (
         <div className="md:w-1/3 lg:m-10 m-6 bg-base-200 shadow-xl">
 
@@ -28,11 +31,12 @@ const Bookmarks = ({ bookmarks , handlePrepare }) => {
             {/* table   */}
 
 
-            {
+            {/* {
                 bookmarks.map((bookmark, i) => <Bookmark key={bookmark.recipe_id} bookmark={bookmark} index={i + 1}> handlePrepare={handlePrepare}</Bookmark>)
 
-            }
+            } */}
 
+            
 
 
             <h2 className="text-2xl mt-8 font-semibold text-center">Currently cooking:{bookmarks.length}</h2>
@@ -53,10 +57,10 @@ const Bookmarks = ({ bookmarks , handlePrepare }) => {
 
             {/* table   */}
 
-            {
+            {/* {
                 bookmarks.map((bookmark, i) => <Bookmark key={bookmark.recipe_id} bookmark={bookmark} index={i + 1}></Bookmark>)
 
-            }
+            } */}
 
             <div className='border border-solid border-gray-200 my-4'>
 
