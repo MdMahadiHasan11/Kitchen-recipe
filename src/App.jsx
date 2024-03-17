@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
@@ -17,8 +18,8 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [prepareIteam, setPrepareIteam] = useState([]);
 
-  // const [prepareTime, setPrepareTime] = useState([0]);
-  // const [prepareCalorie, setPrepareCalorie] = useState([0]);
+  const [prepareTime, setPrepareTime] = useState(0);
+  const [prepareCalorie, setPrepareCalorie] = useState(0);
 
   // let comment='';
 
@@ -36,9 +37,7 @@ function App() {
       setBookmarks(newBookmarks);
     }
     else {
-      // comment=`hasan`;
-      // <Bookmarks comment={comment}></Bookmarks>
-      alert('Double click');
+       toast("Double Clicked!");
     }
 
 
@@ -46,19 +45,22 @@ function App() {
 
   const handleRemove = (bookmark) => {
 
-    // props.handlePrepare1(bookmark);
-
-
-    const newBookmark = bookmarks.filter(item => item.recipe_id != bookmark.recipe_id)
-
-    // const isExist2 = bookmarks.find(item => item.recipe_id == cart.recipe_id);
-    // if( )
+    const newBookmark = bookmarks.filter(item => item.recipe_id != bookmark.recipe_id)  
     setBookmarks(newBookmark);
 
 
 
     const newBookmarks = [...prepareIteam, bookmark];
     setPrepareIteam(newBookmarks);
+
+
+    // const newPrepareTime = prepareTime+bookmark.prepare_time;
+    setPrepareTime(prepareTime + bookmark.prepare_time);
+
+
+    const newCalories = prepareCalorie + bookmark.calories;
+    setPrepareCalorie(newCalories);
+
 
 
   }
@@ -81,6 +83,7 @@ function App() {
 
         {/* side bar */}
         <div className="md:w-1/3 lg:m-10 m-6 bg-base-200 shadow-xl">
+        <ToastContainer />
           <div >
 
             {/* <Comment comment={comment}></Comment> */}
@@ -183,19 +186,13 @@ function App() {
 
             <div className='flex justify-between font-bold'>
               <div>Total Time=
-                <p>
-                  {/* {
-              prepareIteam.map((prepare) =>
-              prepare.prepare_time
-              )
+                <span>
+                  {prepareTime}
+
+                </span> Minutes</div>
 
 
-            } */}
-
-                </p> Minutes</div>
-
-
-              <div>Total Calories= 400 Calories</div>
+              <div>Total Calories=<span>{prepareCalorie}</span> Calories</div>
             </div>
 
 
