@@ -45,7 +45,7 @@
       "recipe_id": 4,
       "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
       "recipe_name": "Soy Mushroom Stir-Fry",
-      "short_desc": "A vegetarian-friendly stir-fry with mushrooms and a soy-based sauce.",
+      "short_desc": "A vegetarian-friendly  mushrooms sauce.",
       "ingredients": [
         "500 g mushroom",
         "150 ml soy sauce",
@@ -73,7 +73,7 @@
       "recipe_id": 6,
       "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
       "recipe_name": "Mushroom Soy Soup",
-      "short_desc": "A comforting soup featuring mushrooms in a soy-infused broth.",
+      "short_desc": "A comforting soup featuring mushrooms.",
       "ingredients": [
         "500 g mushroom",
         "200 ml soy sauce",
