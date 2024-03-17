@@ -1,10 +1,15 @@
 
-import Bookmark from '../../components/Bookmark/Bookmark'
+// import Bookmark from '../../components/Bookmark/Bookmark'
+// import Bookmark from '../../components/Bookmark/bookmark', handlePrepare1
 // handlePrepare
 import PropTypes from 'prop-types'
+import Bookmark1 from '../Bookmark/Bookmark1';
 
 
-const Bookmarks = ({ bookmarks,  }) => {
+const Bookmarks = ({ bookmarks, handlePrepare1 }) => {
+
+
+
     return (
         <div className="md:w-1/3 lg:m-10 m-6 bg-base-200 shadow-xl">
 
@@ -27,15 +32,29 @@ const Bookmarks = ({ bookmarks,  }) => {
                 </div>
             </div>
 
-            {/* table   */}
-            {/* handlePrepare={handlePrepare} */}
+            {/* table handlePrepare1={ }  */}
+            {/*  */}
 
             {
-                bookmarks.map((bookmark, i) => <Bookmark key={bookmark.recipe_id} bookmark={bookmark} index={i + 1}> </Bookmark>)
+                bookmarks.map((bookmark, i) => <Bookmark1
+                    key={bookmark.recipe_id}
+                    bookmark={bookmark}
+                    index={i + 1}> handlePrepare1={handlePrepare1} </Bookmark1>)
 
             }
 
-            
+
+
+            {/* {
+                bookmarks.map((bookmark , i) => <Bookmark1 handlePrepare1={} handlePrepare1
+                    key={bookmarks.recipe_id}
+                    bookmark={bookmark}
+                    index={i+1}
+                    // handleAddBookmark={handleAddBookmark}
+                ></Bookmark1>)
+            } */}
+
+
 
 
             <h2 className="text-2xl mt-8 font-semibold text-center">Currently cooking:{bookmarks.length}</h2>
@@ -78,7 +97,10 @@ const Bookmarks = ({ bookmarks,  }) => {
 
 Bookmarks.propTypes = {
     bookmarks: PropTypes.array,
-    handlePrepare: PropTypes.func
+    index: PropTypes.number,
+    handlePrepare1: PropTypes.object,
+
+
 }
 
 export default Bookmarks;

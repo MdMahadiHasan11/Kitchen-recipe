@@ -1,14 +1,15 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-const Bookmark = (props) => {
-    const {bookmark , index , handlePrepare }=props;
+const PrepareMark = ({bookmark , index}) => {
 
-    // const {index} = index;
+
+
     const { recipe_name, prepare_time, calories } = bookmark;
+
+
+
     return (
         <div>
-
-
             <div className='bg-slate-200 p-4 m-4 rounded-xl'>
                 <h3 className='text-2xl'></h3>
 
@@ -27,11 +28,10 @@ const Bookmark = (props) => {
                     <tbody>
 
                         <tr className="bg-base-200">
-                            <th className='pr-3'>{index}</th>
-                            <td className='pr-3'>{recipe_name}</td>
-                            <td className='pr-3'>{prepare_time}</td>
-                            <td className='pr-3'>{calories}</td>
-                            <td className='pr-3'><button onClick={()=>handlePrepare(recipe_name)} className='py-2 px-4 mx-auto bg-[#0BE58A] rounded-full'>Preparing</button></td>
+                            <td className='pr-3'>{index}</td>
+                            <td className=''>{recipe_name} </td>
+                            <td className='pl-6'>{prepare_time} Minutes</td>
+                            <td className='pl-8'>{calories} Calories</td> 
                         </tr>
 
                     </tbody>
@@ -42,10 +42,16 @@ const Bookmark = (props) => {
         </div>
     );
 };
-Bookmark.propTypes = {
+
+
+PrepareMark.propTypes = {
     bookmark: PropTypes.object,
-    index:PropTypes.number,
-    handlePrepare:PropTypes.func
+    index: PropTypes.number,
+
+
+    handlePrepare1: PropTypes.object,
+    handleRemove: PropTypes.func
+
 }
 
-export default Bookmark;
+export default PrepareMark;
