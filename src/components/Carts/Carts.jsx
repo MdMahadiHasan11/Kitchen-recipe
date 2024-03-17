@@ -4,7 +4,7 @@ import Cart from '../../components/Cart/Cart'
 import PropTypes from 'prop-types';
 
 
-const Carts = ({handleAddBookmark}) => {
+const Carts = ({ handleAddBookmark }) => {
 
     const [carts, setCarts] = useState([]);
 
@@ -16,13 +16,14 @@ const Carts = ({handleAddBookmark}) => {
 
     return (
         <div className="md:w-2/3">
+            
             <div className="md:grid grid-cols-2">
                 {
                     carts.map(cart => <Cart
                         key={cart.recipe_id}
-                        cart={cart} 
+                        cart={cart}
                         handleAddBookmark={handleAddBookmark}
-                        ></Cart>)
+                    ></Cart>)
                 }
             </div>
 
@@ -32,7 +33,7 @@ const Carts = ({handleAddBookmark}) => {
 };
 
 Carts.propTypes = {
-    handleAddBookmark:PropTypes.func
+    handleAddBookmark: PropTypes.func
 }
 
 export default Carts;

@@ -1,4 +1,5 @@
 import profile from '../../assets/images/profile.png'
+import search from '../../assets/images/search.png'
 const Header = () => {
     return (
         <div>
@@ -19,12 +20,13 @@ const Header = () => {
                     </div>
                     <div className="flex justify-between items-center">
 
-                        <div className="form-control">
-                            <input type="text" placeholder="Search" className=" py-3 px-6  rounded-full bg-[#150B2B0D]" />
+                        <div className="form-control relative">
+                        <img src={search} alt="" className='absolute top-3 left-3' />
+                            <input type="text" placeholder="Search" className=" py-3 pr-6 pl-10   rounded-full bg-[#150B2B0D]" />
                         </div>
 
                         <button
-                            className="ml-3 p-4 mx-auto bg-[#0BE58A] rounded-full text-xl font-bold flex items-center"> <img src={profile} alt="" />
+                            className="md:ml-4 md:p-4 p-5 ml-4 mx-auto bg-[#0BE58A] rounded-full text-xl font-bold flex items-center"> <img src={profile} alt="" className='w-full h-full text-4xl' />
                         </button>
                     </div>
                 </div>

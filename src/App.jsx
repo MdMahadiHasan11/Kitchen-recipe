@@ -37,7 +37,7 @@ function App() {
       setBookmarks(newBookmarks);
     }
     else {
-       toast("Double Clicked!");
+      toast("Already exist!");
     }
 
 
@@ -45,7 +45,7 @@ function App() {
 
   const handleRemove = (bookmark) => {
 
-    const newBookmark = bookmarks.filter(item => item.recipe_id != bookmark.recipe_id)  
+    const newBookmark = bookmarks.filter(item => item.recipe_id != bookmark.recipe_id)
     setBookmarks(newBookmark);
 
 
@@ -77,85 +77,94 @@ function App() {
 
       <Banner></Banner>
 
-      <div className='md:flex'>
-        <Carts handleAddBookmark={handleAddBookmark}></Carts>
+
+      <div className='my-20 '>
+        <div className='md:w-2/3'>
+          <div className='text-center'>
+            <h3 className='font-extrabold text-4xl mb-10'>Our Recipes</h3>
+            <p className='text-gray-600 md:w-3/4 mx-auto '>Our Recipes is a platform dedicated to sharing a wide array of culinary creations, ranging from traditional favorites to innovative dishes .Our goal is to inspire and empower individuals to explore the world of cooking, regardless of their level of experience in the kitchen.</p>
+          </div>
+        </div>
+
+        <div className='md:flex'>
+          <Carts handleAddBookmark={handleAddBookmark}></Carts>
 
 
-        {/* side bar */}
-        <div className="md:w-1/3 lg:m-10 m-6 bg-base-200 shadow-xl">
-        <ToastContainer />
-          <div >
+          {/* side bar */}
+          <div className="md:w-1/3 lg:m-10 m-6 ">
+            <ToastContainer />
+            <div className='border bg-base-200 shadow-xl ' >
 
-            {/* <Comment comment={comment}></Comment> */}
+              {/* <Comment comment={comment}></Comment> */}
 
-            <h2 className="text-2xl font-semibold text-center">Want to cook:{bookmarks.length}</h2>
+              <h2 className="text-2xl font-semibold text-center">Want to cook:{bookmarks.length}</h2>
 
-            <div className='border border-solid border-gray-200 my-4'>
+              <div className='border border-solid border-gray-200 my-4'>
 
-            </div>
-
-            {/* table */}
-            <div className=''>
-              <div className='flex justify-around'>
-                <p></p>
-                <p>Name</p>
-                <p>Time</p>
-                <p>Calories</p>
-                <p></p>
               </div>
-            </div>
 
-
-            {
-              bookmarks.map((bookmark, i) => <Bookmark1
-                key={bookmark.recipe_id}
-                bookmark={bookmark}
-                handleRemove={handleRemove}
-                index={i + 1}
-              > </Bookmark1>)
-
-            }
-            <h2 className="text-2xl mt-8 font-semibold text-center">Currently cooking:{prepareIteam.length}</h2>
-
-            <div className='border border-solid border-gray-200 my-4'> </div>
-
-
-
-
-
-
-
-            {/* table */}
-            <div className=''>
-              <div className='flex justify-around'>
-                <p></p>
-                <p>Namee</p>
-                <p>Time</p>
-                <p>Calories</p>
-                <p></p>
+              {/* table */}
+              <div className=''>
+                <div className='flex justify-around'>
+                  <p></p>
+                  <p>Name</p>
+                  <p>Time</p>
+                  <p>Calories</p>
+                  <p></p>
+                </div>
               </div>
-            </div>
 
-            <div>
+
               {
-                prepareIteam.map((prepare, i) => <PrepareMark
-                  key={prepare.recipe_id}
-                  bookmark={prepare}
+                bookmarks.map((bookmark, i) => <Bookmark1
+                  key={bookmark.recipe_id}
+                  bookmark={bookmark}
+                  handleRemove={handleRemove}
                   index={i + 1}
-                > </PrepareMark>)
+                > </Bookmark1>)
 
               }
-            </div>
+              <h2 className="text-2xl mt-8 font-semibold text-center">Currently cooking:{prepareIteam.length}</h2>
 
-            {/* table   */}
-
-            <div className='border border-solid border-gray-200 my-4'> </div>
+              <div className='border border-solid border-gray-200 my-4'> </div>
 
 
-            {/* 2nd table */}
-            <div>
 
-              {/* {
+
+
+
+
+              {/* table */}
+              <div className=''>
+                <div className='flex justify-around'>
+                  <p></p>
+                  <p>Namee</p>
+                  <p>Time</p>
+                  <p>Calories</p>
+                  <p></p>
+                </div>
+              </div>
+
+              <div>
+                {
+                  prepareIteam.map((prepare, i) => <PrepareMark
+                    key={prepare.recipe_id}
+                    bookmark={prepare}
+                    index={i + 1}
+                  > </PrepareMark>)
+
+                }
+              </div>
+
+              {/* table   */}
+
+              <div className='border border-solid border-gray-200 my-4'> </div>
+
+
+              {/* 2nd table */}
+              <div>
+
+                {/* {
                 prepareIteam.map(prepareIteam, j => (
                   <div>
                     <div className='bg-slate-200 p-4 m-4 rounded-xl'>
@@ -181,27 +190,29 @@ function App() {
                 )
               } */}
 
-            </div>
+              </div>
 
 
-            <div className='flex justify-between font-bold'>
-              <div>Total Time=
-                <span>
-                  {prepareTime}
+              <div className='flex justify-between font-bold pb-10 px-1'>
+                <div>Total Time=
+                  <span>
+                    {prepareTime}
 
-                </span> Minutes</div>
-
-
-              <div>Total Calories=<span>{prepareCalorie}</span> Calories</div>
-            </div>
+                  </span> Minutes</div>
 
 
+                <div>Total Calories=<span>{prepareCalorie}</span> Calories</div>
+              </div>
 
 
-          </div >
+
+
+            </div >
+          </div>
         </div>
-      </div>
-      <div>
+        <div>
+
+        </div>
 
       </div>
 

@@ -11,13 +11,13 @@ const Cart = ({ cart , handleAddBookmark }) => {
         <div>
             {/* cart */}
 
-            <div className="card lg:m-10 m-6 bg-base-100 shadow-xl">
+            <div className="card lg:m-10 m-6 bg-base-100 shadow-2xl border">
                 <figure className="px-10 pt-10">
                     <img src={img} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body px-10 pt-5 ">
                     <h2 className="card-title text-xl font-bold">{recipe_name}</h2>
-                    <p>{short_desc}
+                    <p className='text-gray-500'>{short_desc}
                     </p>
                     <div className='border border-solid border-gray-200 my-4'>
 
@@ -30,7 +30,7 @@ const Cart = ({ cart , handleAddBookmark }) => {
                     <div>
                         <p className='font-semibold text-lg'>Ingredients: {ingredients.length}</p>
                         {ingredients.length > 0 ? (
-                            <ul>
+                            <ul className='text-gray-500 list-disc ml-4'>
                                 {ingredients.map((ingredient) => (
                                     <li key={recipe_id}>{ingredient}</li>
                                 ))}
