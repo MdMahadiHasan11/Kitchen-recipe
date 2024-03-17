@@ -1,7 +1,7 @@
 [
     {
       "recipe_id": 1,
-      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "img": "https://i.ibb.co/jf7JBGN/Rectangle-20170-2.png",
       "recipe_name": "Basil Chicken Stir-Fry",
       "short_desc": "A flavorful stir-fry featuring chicken, basil, and mushrooms.",
       "ingredients": [
@@ -43,7 +43,7 @@
     },
     {
       "recipe_id": 4,
-      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "img": "https://i.ibb.co/jf7JBGN/Rectangle-20170-2.png",
       "recipe_name": "Soy Mushroom Stir-Fry",
       "short_desc": "A vegetarian-friendly  mushrooms sauce.",
       "ingredients": [
@@ -71,7 +71,7 @@
     },
     {
       "recipe_id": 6,
-      "img": "https://i.ibb.co/WP4fDzP/Rectangle-20170.png",
+      "img": "https://i.ibb.co/jf7JBGN/Rectangle-20170-2.png",
       "recipe_name": "Mushroom Soy Soup",
       "short_desc": "A comforting soup featuring mushrooms.",
       "ingredients": [
